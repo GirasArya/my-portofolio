@@ -3,8 +3,8 @@ import ilkomunityimg from '../../Assets/Ilkomunity.png'
 import connectimg from '../../Assets/Connect.png'
 import boekberimg from '../../Assets/Boekber.png'
 import bibitqimg from '../../Assets/BibitQ.png'
-import Carousel from '../../Components/Carousel'
 import Github_hero from '../../Assets/Icons/github--hero.svg'
+
 
 const Portfolio = () => {
 
@@ -35,34 +35,34 @@ const Portfolio = () => {
     ]
 
     return (
-        <section id='Portfolio' className='mb-48'>
+        <section id='Portfolio' className='mb-48 w-[100%]'>
             <header className=' flex flex-col items-center mb-20'>
                 <h1 className='font-Header mb-2'>Portfolio</h1>
                 <h2 className='tracking-[0.15rem]'>Featured Projects</h2>
             </header >
-            <div className=''>
-                <Carousel>
+            <div className='px-[10rem]'>
+                <div className='flex w-[100%] overflow-x-auto gap-12 pb-4'>
                     {
                         projectData.map((porto) => (
-                            <div>
-                                <figure className='flex justify-center items-center'>
+                            <div className='px-3 py-3 border-solid border-2 transition-all hover:transition-all hover:drop-shadow-lg hover:border-Portofolio-container-bg rounded-Porto-border'>
+                                <a href={porto.url} target='_blank'>
+                                <figure className='w-max'>
                                     <img src={porto.image}
-                                        className='max-w-[35rem] pr-12' />
-                                    <figcaption className='w-[35rem]'>
-                                        <h3 className='text-4xl pb-4 font-Header'>{porto.title}</h3>
-                                        <p className='max-w-[30rem] pb-4'>{porto.desc}</p>
-                                        <a href={porto.url} target='_blank' className='flex'>
-                                            <img src={Github_hero} />
+                                        className='w-[21rem] h-fit' />
+                                    <figcaption>
+                                        <a href={porto.url} target='_blank'>
+                                            <h3 className='text-4xl pb-4 font-Header pl-2 py-4'>{porto.title}</h3>
+                                            <p className='pl-2 pb-2'>View More</p>
                                         </a>
                                     </figcaption>
                                 </figure>
+                            </a>
                             </div>
-                        ))
+                ))
                     }
-                </Carousel>
             </div>
-
-        </section>
+        </div>
+        </section >
     )
 }
 

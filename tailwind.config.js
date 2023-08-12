@@ -10,18 +10,22 @@ module.exports = {
         'Subheader': ['DM Serif Text'],
         'content': ['Inria Serif']
       },
-      backgroundImage: {
-        'Hero-img': "url('Assets/Hero-Profile-Pic.png'),linear-gradient(180deg, rgba(186, 207, 205, 0.00) 0%, #2AE5EB 28.96%, #61ACF1 69.06%)",
+      colors: {
         'Tech-container-bg': 'rgba(175, 211, 226, 0.10)',
         'Footer-container-bg': 'rgba(25, 167, 206, 0.50)'
       },
+      backgroundImage: {
+        'Hero-img': "url('Assets/Hero-Profile-Pic.png'),linear-gradient(180deg, rgba(186, 207, 205, 0.00) 0%, #2AE5EB 28.96%, #61ACF1 69.06%)",
+      },
       borderColor: {
-        'Hero-border-color': 'rgba(171, 171, 171, 0.74)'
+        'Hero-border-color': 'rgba(171, 171, 171, 0.74)',
+        'Portofolio-container-bg': 'rgba(25, 167, 206, 0.3)',
       }
       ,
       borderRadius: {
         'Hero-profile-border': '16rem',
         'Tech-border': '1.25rem 0rem',
+        'Porto-border': '1.25rem 0rem',
         'Porto-button-border': '0.5rem'
       },
       dropShadow: {
