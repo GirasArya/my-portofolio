@@ -1,8 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   list-style: none;
+  background-color: #F6F1F1;
+  font-family: 'Inria Serif', serif;
+}
+
+h1{
+  font-size: 3rem;
+  opacity: 70%;
+}
+
+h2{
+  font-size: 1.5rem;
+  opacity: 60%;
+}
+
+li,h3{
+  font-size: 1.25rem;
+  opacity: 60%;
+}
+
+p{
+  font-size: 1rem;
+  opacity: 60%;
 }

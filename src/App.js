@@ -1,8 +1,11 @@
 import './App.css';
 import Navbar from '../src/Features/Navbar/Navbar'
 import Hero from '../src/Features/Main Display/Hero'
-import About from './Features/About Me/About';
+import Experience from './Features/Experience/Experience';
 import Tech from './Features/Technology/Tech';
+import Portfolio from './Features/Portfolio/Portfolio';
+import Contact from './Features/Contact/Contact';
+import Footer from './Features/Footer/Footer';
 
 
 function App() {
@@ -10,8 +13,11 @@ function App() {
     <div className="App font-main">
       <Navbar />
       <Hero />
-      <About />
       <Tech />
+      <Experience />
+      <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   );
 }

@@ -4,12 +4,30 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend:{
-
+    extend: {
+      fontFamily: {
+        'Header': ['DM Serif Display'],
+        'Subheader': ['DM Serif Text'],
+        'content': ['Inria Serif']
+      },
+      backgroundImage: {
+        'Hero-img': "url('Assets/Hero-Profile-Pic.png'),linear-gradient(180deg, rgba(186, 207, 205, 0.00) 0%, #2AE5EB 28.96%, #61ACF1 69.06%)",
+        'Tech-container-bg': 'rgba(175, 211, 226, 0.10)',
+        'Footer-container-bg': 'rgba(25, 167, 206, 0.50)'
+      },
+      borderColor: {
+        'Hero-border-color': 'rgba(171, 171, 171, 0.74)'
+      }
+      ,
+      borderRadius: {
+        'Hero-profile-border': '16rem',
+        'Tech-border': '1.25rem 0rem',
+        'Porto-button-border': '0.5rem'
+      },
+      dropShadow: {
+        'Tech-shadow': '5px 5px 10px rgba(0, 0, 0, 0.25)'
+      }
     },
-    fontFamily:{
-      main: ['Poppins']
-    }
   },
   plugins: [],
 }
