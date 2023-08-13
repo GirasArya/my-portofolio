@@ -15,7 +15,7 @@ const Hero = () => {
 
             <div id="Hero-Profile-Container" className='flex flex-col items-center md:flex md:flex-row md:items-center lg:items-start justify-center mt-7'>
                 <div className='flex flex-col order-2'>
-                    <div id="Hero-About" className='flex flex-col items-center max-w-xs mb-16 mt-4'>
+                    <div id="Hero-About" className='flex flex-col items-center md:items-start max-w-xs mb-16 mt-4'>
                         <h3 className='font-Subheader pb-1'>About</h3>
                         <p className='text-center md:text-left md:w-64'>Hi! my name is Giras Arya Ichsani, i'm a third year of Undergraduate Computer Science at IPB University. Passionate in learning things related to web development and it’s framework</p>
                     </div>
