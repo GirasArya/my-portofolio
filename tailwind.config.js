@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens:{
+        xs: '480px'
+      },
       fontFamily: {
         'Header': ['DM Serif Display'],
         'Subheader': ['DM Serif Text'],

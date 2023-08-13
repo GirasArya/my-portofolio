@@ -4,13 +4,14 @@ import ieducation from '../../Assets/Icons/Exp-Education.svg'
 
 const Experience = () => {
     return (
-        <section id='Experience' className='mb-48'>
+        <section id='Experience' className='mb-16 md:mb-28 lg:mb-48'>
             <header className=' flex flex-col items-center'>
                 <h1 className='font-Header mb-2'>Experience</h1>
             </header >
 
-            <div id="Experience-container" className='flex justify-center gap-60 pt-16'>
-                <div id="projects">
+            <div id="Experience-container" 
+            className='flex flex-col justify-center items-center sm:flex-row sm:justify-center sm:items-start md:flex-row md:justify-center sm:gap-16 md:gap-60 pt-16'>
+                <div id="projects" className='pb-16 md:pb-0'>
                     <div id="projects-header" className='flex'>
                         <img src={iproject} />
                         <h2 className='font-content opacity-[70%] pl-2'>Projects</h2>
