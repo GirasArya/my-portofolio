@@ -40,8 +40,8 @@ const Portfolio = () => {
                 <h1 className='font-Header mb-2'>Portfolio</h1>
                 <h2 className='tracking-[0.15rem]'>Featured Projects</h2>
             </header >
-            <div className='px-[10rem]'>
-                <div className='flex w-[100%] overflow-x-auto gap-12 pb-4'>
+            <div className='flex justify-center'>
+                <div className='flex w-[23rem] lg:w-[50rem] xl:w-[75rem] overflow-x-auto gap-12 pb-4'>
                     {
                         projectData.map((porto) => (
                             <div className='px-3 py-3 border-solid border-2 transition-all hover:transition-all hover:drop-shadow-lg hover:border-Portofolio-container-bg rounded-Porto-border'>
