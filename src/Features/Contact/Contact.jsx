@@ -2,10 +2,14 @@ import React from 'react'
 import LinkedIn_hero from '../../Assets/Icons/LinkedIn--hero.svg'
 import Github_hero from '../../Assets/Icons/github--hero.svg'
 import Mail_hero from '../../Assets/Icons/mail--hero.svg'
+import {motion} from 'framer-motion'
 
 const Contact = () => {
     return (
-        <section id='Contact' className='mb-16 md:mb-28 lg:mb-48'>
+        <motion.section 
+        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+        transition={{duration: 0.5}}
+        id='Contact' className='mb-16 md:mb-28 lg:mb-48'>
             <div>
                 <header className=' flex flex-col items-center'>
                     <h1 className='font-Header mb-2'>Contact</h1>
@@ -19,7 +23,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

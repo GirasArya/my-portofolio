@@ -6,11 +6,15 @@ import Git from '../../Assets/Tech-Git.svg'
 import ReactJS from '../../Assets/Tech-React.svg'
 import Tailwind from '../../Assets/Tech-Tailwind.svg'
 import Bootstrap from '../../Assets/Tech-Bootstrap.svg'
+import {motion} from 'framer-motion'
 
 
 const Tech = () => {
   return (
-    <section id='Tech' className='flex flex-col justify-cente mb-16 md:mb-28 lg:mb-48'>
+    <motion.section 
+    whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+        transition={{duration: 0.5}}
+        id='Tech' className='flex flex-col justify-cente mb-16 md:mb-28 lg:mb-48'>
       <header className=' flex flex-col items-center'>
         <h1 className='font-Header mb-2'>Technology</h1>
         <h2 className='text-base sm:text-xl lg:text-2xl'>Experienced Languages And Frameworks</h2>
@@ -26,7 +30,7 @@ const Tech = () => {
         <figure className='flex justify-center items-center w-32 h-32 rounded-Tech-border transition-all hover:transition hover:drop-shadow-Tech-shadow'><img src={Tailwind} /></figure>
         <figure className='flex justify-center items-center w-32 h-32 rounded-Tech-border transition-all hover:transition hover:drop-shadow-Tech-shadow'><img src={Bootstrap} /></figure>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

@@ -1,10 +1,14 @@
 import React from 'react'
 import iproject from '../../Assets/Icons/Exp-Projects.svg'
 import ieducation from '../../Assets/Icons/Exp-Education.svg'
+import {motion} from 'framer-motion'
 
 const Experience = () => {
     return (
-        <section id='Experience' className='mb-16 md:mb-28 lg:mb-48'>
+        <motion.section 
+        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+        transition={{duration: 0.5}}
+        id='Experience' className='mb-16 md:mb-28 lg:mb-48'>
             <header className=' flex flex-col items-center'>
                 <h1 className='font-Header mb-2'>Experience</h1>
             </header >
@@ -50,7 +54,7 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

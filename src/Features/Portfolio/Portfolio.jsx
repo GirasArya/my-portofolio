@@ -4,7 +4,7 @@ import connectimg from '../../Assets/Connect.png'
 import boekberimg from '../../Assets/Boekber.png'
 import bibitqimg from '../../Assets/BibitQ.png'
 import Github_hero from '../../Assets/Icons/github--hero.svg'
-
+import {motion} from 'framer-motion'
 
 const Portfolio = () => {
 
@@ -35,7 +35,10 @@ const Portfolio = () => {
     ]
 
     return (
-        <section id='Portfolio' className='mb-48 w-[100%]'>
+        <motion.section 
+        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+        transition={{duration: 0.5}}
+        id='Portfolio' className='mb-48 w-[100%]'>
             <header className=' flex flex-col items-center mb-20'>
                 <h1 className='font-Header mb-2'>Portfolio</h1>
                 <h2 className='tracking-[0.15rem]'>Featured Projects</h2>
@@ -62,7 +65,7 @@ const Portfolio = () => {
                     }
             </div>
         </div>
-        </section >
+        </motion.section >
     )
 }
 

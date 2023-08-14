@@ -2,11 +2,15 @@ import React from 'react'
 import LinkedIn_hero from '../../Assets/Icons/LinkedIn--hero.svg'
 import Github_hero from '../../Assets/Icons/github--hero.svg'
 import Mail_hero from '../../Assets/Icons/mail--hero.svg'
+import { motion } from 'framer-motion'
 
 
 const Hero = () => {
     return (
-        <section id='Hero' className='mt-5 mb-16 md:mb-28 lg:mb-48'>
+        <motion.section
+            whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+            transition={{ duration: 0.5 }}
+            id='Hero' className='mt-5 mb-16 md:mb-28 lg:mb-48'>
             <div id="Hero-Intro" className='flex flex-col items-center'>
                 <h2 className='font-Header'>Hi There</h2>
                 <h1 className='font-Header'>I'm Giras Arya</h1>
@@ -44,8 +48,7 @@ const Hero = () => {
                     <h1 className='font-content md:text-end'>4+</h1>
                 </div>
             </div>
-
-        </section>
+        </motion.section>
     )
 }
 
