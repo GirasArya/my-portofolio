@@ -9,7 +9,7 @@ const Contact = () => {
         <motion.section 
         whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
         transition={{duration: 0.5}}
-        id='Contact' className='mb-16 md:mb-28 lg:mb-48'>
+        id='Contact' className='mb-32 md:mb-32 lg:mb-48'>
             <div>
                 <header className=' flex flex-col items-center'>
                     <h1 className='font-Header mb-2'>Contact</h1>

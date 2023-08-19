@@ -26,6 +26,7 @@ module.exports = {
       }
       ,
       borderRadius: {
+        'Mobile-nav-pil': '3.25rem',
         'Hero-profile-border': '16rem',
         'Tech-border': '1.25rem 0rem',
         'Porto-border': '1.25rem 0rem',
