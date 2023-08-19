@@ -26,14 +26,14 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Area */}
-          <div className='flex justify-center rounded-Mobile-nav-pil'>
+          {/* <div className='flex justify-center rounded-Mobile-nav-pil lg:hidden'>
             <div id="navbar-mobile-pill-container" className='bg-white drop-shadow-2xl z-40 rounded-Mobile-nav-pil fixed bottom-[5rem] w-[24rem] lg:hidden'>
               <div className='flex flex-row justify-around rounded-Mobile-nav-pil'>
                 <h2 className='rounded-Mobile-nav-pil  py-3'>Welcome</h2>
                 <img src={hamb}/>
               </div>
             </div>
-          </div>
+          </div> */}
       </div>
     </section>
   )
