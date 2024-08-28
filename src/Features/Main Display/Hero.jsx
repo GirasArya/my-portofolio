@@ -21,7 +21,7 @@ const Hero = () => {
                 <div className='flex flex-col order-2'>
                     <div id="Hero-About" className='flex flex-col items-center md:items-start max-w-xs mb-16 mt-4'>
                         <h3 className='font-Subheader pb-1'>About</h3>
-                        <p className='text-center md:text-left md:w-64'>Hi! my name is Giras Arya Ichsani, i'm a third year of Undergraduate Computer Science at IPB University. Passionate in learning things related to web development and it’s framework</p>
+                        <p className='text-center md:text-left md:w-64'>Hi! my name is Giras Arya Ichsani an undergraduate Computer Science student. Passionate in learning new things about software development. I'm experienced in web development as a Front-end engineer and currently i'm learning Android development with Kotlin!</p>
                     </div>
                     <div id="Hero-Contact" className='flex flex-col items-center md:items-start mb-16 md:mb-0 '>
                         <h3 className='font-Subheader pb-1'>Contact</h3>
